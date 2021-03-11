@@ -1,0 +1,77 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  max-width: 750px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template:
+    "one one two two" 210px
+    "three three four five" 105px
+    "three three six seven" 105px / 185px 185px 185px 185px;
+}
+
+div {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 210px;
+}
+
+div:nth-child(4),
+div:nth-child(5),
+div:nth-child(6),
+div:nth-child(7) {
+  font-size: 25px;
+  line-height: 105px;
+}
+
+.one {
+  background-color: #dae7de;
+  color: #f44607;
+  grid-area: one;
+}
+
+.two {
+  background-color: #038a69;
+  color: white;
+  grid-area: two;
+}
+
+.three {
+  background-color: #f44607;
+  color: white;
+  grid-area: three;
+}
+
+.four {
+  background-color: #f7abc5;
+  color: #f44607;
+  grid-area: four;
+}
+
+.five {
+  background-color: #5f5fa9;
+  color: white;
+  grid-area: five;
+}
+
+.six {
+  background-color: #ffc127;
+  color: #f44607;
+  grid-area: six;
+}
+
+.seven {
+  background-color: #f97374;
+  color: white;
+  grid-area: seven;
+}
