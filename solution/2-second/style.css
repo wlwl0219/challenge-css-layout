@@ -1,0 +1,63 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  background-color: #dde1d4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    "Playfair Display", serif;
+
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  line-height: 50vh;
+}
+
+.grid div:nth-child(1) {
+  color: rgb(242, 72, 31);
+  background-color: rgb(219, 231, 222);
+}
+
+.grid div:nth-child(2) {
+  background-color: rgb(18, 135, 104);
+}
+.grid div:nth-child(3) {
+  background-color: rgb(242, 72, 31);
+}
+.grid div:nth-child(4) {
+  background-color: rgb(247, 116, 119);
+}
+
+.grid .sub-box {
+  font-size: 25px;
+  line-height: 25vh;
+}
+
+.sub-box div:nth-child(1) {
+  background-color: rgb(246, 172, 197);
+}
+.sub-box div:nth-child(2) {
+  background-color: rgb(96, 97, 167);
+}
+.sub-box div:nth-child(3) {
+  color: rgb(242, 72, 31);
+  background-color: rgb(254, 192, 61);
+}

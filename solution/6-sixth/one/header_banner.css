@@ -1,0 +1,30 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-rows: 2.5rem 1fr 2.5rem;
+  grid-template-columns: 3rem 1fr 3rem;
+}
+.header__top,
+.header__bottom {
+  overflow: hidden;
+  position: relative;
+  grid-column: 1/-1;
+  background-color: white;
+  color: var(--main-red-color);
+  border: var(--main-border);
+}
+.header__top p,
+.header__bottom p {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}

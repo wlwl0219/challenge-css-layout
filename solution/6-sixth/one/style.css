@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap');
+@import 'reset.css';
+@import 'header_banner.css';
+@import 'header-sidebar.css';
+@import 'content.css';
+
+:root {
+  --main-bg-color: #efea45;
+  --main-red-color: #ff6c2c;
+  --main-border: 5px solid #ff6c2c;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 1rem;
+  font-style: italic;
+  width: 100vw;
+  height: 100vh;
+  min-height: 760px;
+}
+.title {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title img {
+  width: 25rem;
+}
+
+.mobile_nav {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--main-red-color);
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+  z-index: 1;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
